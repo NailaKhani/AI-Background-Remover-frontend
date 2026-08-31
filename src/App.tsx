@@ -27,6 +27,7 @@ const ReplaceBgPage = lazy(() => import('./pages/ReplaceBgPage'))
 const RecolorPage = lazy(() => import('./pages/RecolorPage'))
 const SmartCropPage = lazy(() => import('./pages/SmartCropPage'))
 const BatchPage = lazy(() => import('./pages/BatchPage'))
+const MagicEraserPage = lazy(() => import('./pages/MagicEraserPage'))
 const ShadowPage = lazy(() => import('./pages/ShadowPage'))
 const HistoryPage = lazy(() => import('./pages/HistoryPage'))
 const SettingsPage = lazy(() => import('./pages/SettingsPage'))
@@ -70,6 +71,7 @@ function MainLayout() {
               <Route path="/recolor" element={<ProtectedRoute><RecolorPage /></ProtectedRoute>} />
               <Route path="/smart-crop" element={<ProtectedRoute><SmartCropPage /></ProtectedRoute>} />
               <Route path="/batch" element={<ProtectedRoute><BatchPage /></ProtectedRoute>} />
+              <Route path="/magic-eraser" element={<ProtectedRoute><MagicEraserPage /></ProtectedRoute>} />
               <Route path="/shadow" element={<ProtectedRoute><ShadowPage /></ProtectedRoute>} />
               <Route path="/history" element={<ProtectedRoute><HistoryPage /></ProtectedRoute>} />
               <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />

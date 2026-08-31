@@ -35,11 +35,13 @@ const NAV_ITEMS = [
   },
   {
     to: '/recolor', label: 'Recolor', end: false,
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-3.5 h-3.5 shrink-0" aria-hidden="true">
-        <path fillRule="evenodd" d="M8 1a7 7 0 100 14A7 7 0 008 1zM5.5 8a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0z" clipRule="evenodd" />
-      </svg>
-    ),
+    icon: (<span className="w-3.5 h-3.5 shrink-0 text-base leading-none">✨</span>),
+  },
+
+
+  {
+    to: '/magic-eraser', label: 'Magic Eraser', end: false,
+    icon: (<span className="w-3.5 h-3.5 shrink-0 text-base leading-none">✨</span>),
   },
   {
     to: '/smart-crop', label: 'Smart Crop', end: false,
