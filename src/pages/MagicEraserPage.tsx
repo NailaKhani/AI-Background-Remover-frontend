@@ -1,4 +1,4 @@
-﻿import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import UploadZone from '../components/UploadZone'
 import DownloadButton from '../components/DownloadButton'
 import SendToMenu from '../components/SendToMenu'
@@ -179,7 +179,7 @@ export default function MagicEraserPage() {
 
   if (!originalUrl) {
     return (
-      <main className="flex-1 min-w-0 pb-16 md:pb-6">
+      <main className="relative max-w-6xl mx-auto px-4 sm:px-6 py-4 w-full">
         <div className="flex flex-col items-center justify-center min-h-[60vh] px-4">
           <div className="text-center mb-10 space-y-4">
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-primary">
@@ -188,7 +188,7 @@ export default function MagicEraserPage() {
               </span>
             </h1>
             <p className="text-lg text-secondary max-w-xl mx-auto leading-relaxed">
-              Brush over any unwanted object or person ΓÇö AI will remove it and fill in the background naturally.
+              Brush over any unwanted object or person — AI will remove it and fill in the background naturally.
             </p>
           </div>
           
@@ -201,13 +201,13 @@ export default function MagicEraserPage() {
   }
 
   return (
-    <main className="flex-1 min-w-0 pb-16 md:pb-6">
+    <main className="relative max-w-6xl mx-auto px-4 sm:px-6 py-4 w-full">
       <div className="flex flex-col lg:flex-row gap-6 h-full">
         <div className="flex-1 flex flex-col gap-6 min-w-0">
           <div>
             <h1 className="text-2xl font-bold tracking-tight text-primary">Magic Eraser</h1>
             <p className="text-sm text-secondary mt-1">
-              Brush over any unwanted object or person ΓÇö AI will remove it and fill in the background naturally.
+              Brush over any unwanted object or person — AI will remove it and fill in the background naturally.
             </p>
           </div>
 
@@ -223,7 +223,7 @@ export default function MagicEraserPage() {
 
               {error && (
                 <div className="absolute top-4 left-4 right-4 z-40 bg-danger/10 border border-danger/20 p-3 rounded-lg flex items-center gap-2 text-danger">
-                  <span className="text-lg">ΓÜá∩╕Å</span>
+                  <span className="text-lg">⚠️</span>
                   <span className="text-sm font-medium">{error}</span>
                 </div>
               )}
@@ -279,3 +279,4 @@ export default function MagicEraserPage() {
     </main>
   )
 }
+
