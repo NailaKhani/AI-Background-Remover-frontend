@@ -3,6 +3,7 @@ import axios from 'axios'
 import UploadZone from '../components/UploadZone'
 import ImageCanvas from '../components/ImageCanvas'
 import DownloadButton from '../components/DownloadButton'
+import DownloadSvgButton from '../components/DownloadSvgButton'
 import QualityToggle from '../components/QualityToggle'
 import BackgroundPicker from '../components/BackgroundPicker'
 import SendToMenu from '../components/SendToMenu'
@@ -357,6 +358,11 @@ export default function HomePage() {
                 </button>
 
                 <SendToMenu excludeRoute="/" />
+
+                <DownloadSvgButton
+                  sourceUrl={refinedResultUrl || `/api/download/${result!.output_filename}`}
+                  filename={result!.output_filename}
+                />
 
                 <DownloadButton
                   downloadUrl={refinedResultUrl || `/api/download/${result!.output_filename}`}
