@@ -1,4 +1,4 @@
-﻿import { useState } from 'react'
+import { useState } from 'react'
 
 interface DownloadSvgButtonProps {
   /** The URL of the processed image (PNG) to be vectorized */
